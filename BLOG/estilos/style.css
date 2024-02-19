@@ -110,7 +110,8 @@ section#conteudo_receita {
 }
 
 div#background-lasanha {
-    background: var(--cor5) url('../imagens/imagem-lasanha.jpg') no-repeat center center;
+    background: var(--cor5) url('../imagens/imagem-lasanha.jpg');
+    background-position: center center;
     background-size: cover;
     box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.534);
     border-radius: 25px;
@@ -120,7 +121,7 @@ div#background-lasanha {
 
 aside.passo_receita {
     background-color: var(--cor3);
-    width: 100vw;
+    width: 100%;
 
     margin-top: 30px;
     padding: 15px;
@@ -128,10 +129,49 @@ aside.passo_receita {
 
 div.conteudo_passo {
     text-align: justify;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 div.conteudo_passo > p {
     line-height: 1.5em;
+    font-size: 1.2em;
+    color: white;
+}
+
+div.lista {
+    background-color: var(--cor5);
+    border-radius: 20px 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.219);
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.lista > ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    list-style-type: '\1F37D\00A0';
+}
+
+div.lista > ul > li {
+    background-color: var(--cor2);
     font-size: 1.1em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+aside#sessao_passo{
+    background-color: var(--cor2);
+
+    margin-top: 0px;
+}
+
+h2#titulo_passo {
+    background-color: var(--cor5);
+    color: white;
 }
