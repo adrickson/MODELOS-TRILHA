@@ -25,6 +25,45 @@
     }
 }
 
+@keyframes circle-in-hesitate {
+    0% {
+      clip-path: circle(0%);
+    }
+    40% {
+      clip-path: circle(40%);
+    }
+    100% {
+      clip-path: circle(125%);
+    }
+  }
+  
+  [transition-style="in:circle:hesitate"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+  }
+
+  @keyframes circle-out-top-left {
+    from {
+      clip-path: circle(125%);
+    }
+    to {
+      clip-path: circle(0% at top left);
+    }
+  }
+  
+  [transition-style="out:circle:top-left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-top-left both;
+  }
+
+/* CLASSES PARA ANIMAÇÕES */
+
+.fundo-animado-entrada{
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}
+
+.fundo-animado-saida {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-top-left both;
+}
+
 :root {
     --cor1: #F2CB05;
     --cor2: #F29F05;
@@ -167,11 +206,28 @@ div.lista > ul > li {
 
 aside#sessao_passo{
     background-color: var(--cor2);
-
     margin-top: 0px;
 }
 
 h2#titulo_passo {
     background-color: var(--cor5);
     color: white;
+}
+
+div#container_lista_passo {
+    background-color: var(--cor3);
+}
+
+ul#lista_passo > li {
+    background-color: var(--cor5);
+    color: white;
+}
+
+footer#rodape {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.3em;
+    font-family: var(--fonte-marca);
+    padding: 15px;
+    background-color: var(--cor1);
 }
