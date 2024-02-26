@@ -10,7 +10,35 @@
     }
 }
 
-@media screen  and (min-width: 992px){
+@media screen  and (min-width: 992px){ /* VERSÃO PARA COMPUTADOR E TELAS GRANDES */
+
+    /* ANIMAÇÕES CSS SOMENTE PARA ESSA VERSÃO */
+
+    @keyframes mudarFormato {
+        0% {
+          border-radius: 50%; /* Começa com formato circular */
+        }
+
+        25% {
+          border-radius: 10%; /* Muda para formato quadrado na metade da animação */
+        }
+
+        50% {
+            border-radius: 30% 70%; /* Alterna o formato das extermidades do container */
+        }
+
+        75% {
+            border-radius: 87% 25%; /* Alterna o formato das extremidades do container */
+        }
+
+        88% {
+            border-radius: 25% 87%; /* Alterna o formato das extremidades do container */
+        }
+
+        100% {
+          border-radius: 50%; /* Volta para o formato circular no final da animação */
+        }
+      }
 
     nav#navegacao a {
         font-size: 1.3em;
@@ -24,11 +52,56 @@
         font-size: 3em;
     }
 
+    div.cont_tit > h2 {
+        font-size: 1.6em;
+    }
+
     div#background-lasanha {
         width: 900px;
         height: 55vh;
         display: block;
         margin: auto;
+    }
+
+    div.conteudo_passo {
+        width: 880px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    div.conteudo_passo > p {
+        font-size: 1.4em;
+    }
+
+    div#flex-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#cont_flex {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        width: 1000px;
+    }
+
+    div.lista > ul > li {
+        font-size: 1.3em;
+    }
+
+    div#ilustracao {
+        background: purple url('../imagens/ingredientes.jpg') no-repeat center center;
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border: 2px solid lightblue;
+        display: block;
+        animation: mudarFormato 10s ease-in-out infinite;
     }
 
 }
