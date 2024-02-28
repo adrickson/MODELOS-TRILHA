@@ -104,4 +104,16 @@
         animation: mudarFormato 10s ease-in-out infinite;
     }
 
+    div#container_lista_passo {
+        columns: 2;
+        width: 560px;
+
+        margin-bottom: 20px;
+    }
+
+    ul#lista_passo > li  {
+        text-align: justify;
+        padding: 15px;
+    }
+
 }
