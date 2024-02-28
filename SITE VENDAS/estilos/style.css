@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #F2CB05;
+    --cor2: #F29F05;
+    --cor3: #BF5B04;
+    --cor4: #8C2703;
+    --cor5: #591902;
+
+    --fonte-marca: "Protest Riot", sans-serif;
+    --fonte-conteudo: "Josefin Sans", sans-serif;
+    --fonte-titulos: "Archivo Black", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-conteudo);
+}
+
+header#cabecalho {
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+header#cabecalho > h1 {
+    font-family: var(--fonte-marca);
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+nav {
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 17px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: var(--cor2);
+    border-radius: 50%;
+    transition: 0.3s ease;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    
+}
