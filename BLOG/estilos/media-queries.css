@@ -116,4 +116,8 @@
         padding: 15px;
     }
 
+    footer#rodape {
+        font-size: 1.5em;
+    }
+
 }
