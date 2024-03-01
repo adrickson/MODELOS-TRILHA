@@ -150,15 +150,13 @@ div.img_combo_top{
 
 div#combo1 {
     background: white url('../imagens/dinda-top-p-1.jpg') no-repeat center center;
-    background-size: cover;
+    
 }
 
 div#combo2 {
     background: white url('../imagens/dinda-top-p-2.jpg') no-repeat center center;
-    background-size: cover;
 }
 
 div#combo3 {
     background: white url('../imagens/dinda-top-p-3.jpg') no-repeat center center;
-    background-size: cover;
 }
