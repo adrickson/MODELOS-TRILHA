@@ -10,6 +10,22 @@
     box-sizing: border-box;
 }
 
+/* ANIMAÇÕES CSS */
+
+@keyframes bordas-mechendo {
+    0% {
+        border-radius: 15px;
+    }
+
+    50% {
+        border-radius: 40px;
+    }
+
+    100% {
+        border-radius: 15px;
+    }
+}
+
 :root {
     --cor1: #F2CB05;
     --cor2: #F29F05;
@@ -116,7 +132,7 @@ div.cont_tit > h2 {
     border-bottom-right-radius: 20px;
 }
 
-div.dinda_top {
+div.container_dos_produtos {
     display: flex;
     flex-direction: column;
     background-color: var(--cor4);
@@ -130,8 +146,10 @@ a.links_wpp {
     text-decoration: none;
     position: relative;
     border-radius: 15px;
-    border: 2px solid var(--cor2);
+   
     margin-bottom: 20px;
+
+    animation: bordas-mechendo 12s ease-in-out infinite;
 }
 
 p.precos {
@@ -143,12 +161,14 @@ p.precos {
     right: 10%;
 }
 
-div.img_combo_top{
+div.img_combo{
     background-color: white;
     border-radius: 15px;
-
+    border: 2px solid var(--cor2);
     width: 250px;
     height: 250px;
+
+    animation: bordas-mechendo 12s ease-in-out infinite;
 }
 
 div#combo1 {
@@ -165,4 +185,88 @@ div#combo2 {
 div#combo3 {
     background: white url('../imagens/dinda-top-p-3.jpg') no-repeat center center;
     background-size: cover;
+}
+
+div.direcionamento {
+    display: flex;
+    justify-content: left;
+
+    padding: 10px;
+    margin-top: 5px;
+}
+
+div.img_direcionamento {
+    background: url('../imagens/logo-whatsapp.png') no-repeat center center;
+    background-size: cover;
+
+    width: 70px;
+    height: 70px;
+    margin-right: 2px;
+}
+
+div.conteudo_direcionamento {
+    text-align: justify;
+    font-size: 1.25em;
+    line-height: 1.3em;
+    width: 250px;
+    margin-left: 2px;
+}
+
+div.conteudo_direcionamento > p {
+    padding: 5px;
+}
+
+div.conteudo_direcionamento > p > a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: var(--cor5);
+
+    padding: 5px;
+}
+
+section#sessao2 {
+    background-color: var(--cor3);
+}
+
+div#tit_sessao_2 > h2 {
+    background-image: linear-gradient(to right, transparent, var(--cor2) 50%);
+}
+
+div#produtos_sessao_2{
+    background-color: var(--cor2);
+}
+
+div.img_combo_sessao2 {
+    border: 2px solid var(--cor5);
+}
+
+div#combo1_sessao2 {
+    background: white url('../imagens/combo-bebida-1.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+
+div#combo2_sessao2 {
+    background: white url('../imagens/combo-bebida-2.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+
+div#combo3_sessao2 {
+    background: white url('../imagens/combo-bebida-3.jpg') no-repeat right bottom;
+    background-size: cover;
+}
+
+div.img_direcionamento_sessao2{
+    background: url('../imagens/logo-whatsapp.png') no-repeat center center;
+    background-size: cover;
+}
+
+footer#rodape {
+    font-family: var(--fonte-marca);
+    font-weight: lighter;
+    font-size: 1.3em;
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
