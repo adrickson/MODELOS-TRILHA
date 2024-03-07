@@ -256,11 +256,6 @@ div#combo3_sessao2 {
     background-size: cover;
 }
 
-div.img_direcionamento_sessao2{
-    background: url('../imagens/logo-whatsapp.png') no-repeat center center;
-    background-size: cover;
-}
-
 footer#rodape {
     font-family: var(--fonte-marca);
     font-weight: lighter;

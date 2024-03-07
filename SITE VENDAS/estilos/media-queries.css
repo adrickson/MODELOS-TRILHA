@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@media screen  and (min-width: 768px) and (max-width: 992px){ /* VERSÃO PARA TABLET */
+
+    header#cabecalho > h1 {
+        font-size: 3em;
+    }
+
+    nav > a {
+        font-size: 1.4em;
+    }
+
+    div.conteudo > p {
+        font-size: 1.6em;
+    }
+    
+    span#ligou {
+        margin-right: 5px;
+    }
+
+    span#chegou {
+        margin-left: 5px;
+    }
+
+    div.cont_tit > h2 {
+        font-size: 1.8em;
+    }
+
+    div.container_dos_produtos {
+        padding: 15px;
+    }
+
+    a.links_wpp {
+        transition: 0.3s ease;
+        animation: none;
+        border-radius: 30px;
+        
+    }
+
+    a.links_wpp:hover{
+        box-shadow: 0px 0px 10px var(--cor1);
+        
+    }
+
+    div.img_combo {
+        animation: none;
+        border-radius: 30px;
+    }
+
+    div.img_direcionamento {
+        width: 100px;
+        height: 100px;
+        margin-right: 6px;
+    }
+
+    div.conteudo_direcionamento {
+        font-size: 1.5em;
+
+        width: 390px;
+    }
+
+    div.conteudo_direcionamento > p > a {
+
+        transition: 0.3s ease;
+
+    }
+
+    div.conteudo_direcionamento > p > a:hover {
+
+        text-decoration: underline;
+        font-size: 1.1em;
+       
+    }
+
+    a.links_wpp_sessao2:hover {
+        box-shadow: 0px 0px 10px var(--cor5);
+    }
+}
