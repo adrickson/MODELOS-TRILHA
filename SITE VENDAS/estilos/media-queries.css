@@ -140,8 +140,38 @@
         box-shadow: 0px 0px 13px var(--cor1);
     }
 
+    div.direcionamento {
+        padding-left: 40px;
+    }
+
+    div.img_direcionamento {
+        width: 90px;
+        height: 90px;
+    }
+
+    div.conteudo_direcionamento{
+        font-size: 1.7em;
+
+        width: 500px;
+    }
+
+    div.conteudo_direcionamento > p > a {
+        transition: 0.3s ease-in-out;
+    }
+
+    div.conteudo_direcionamento > p > a:hover {
+        background-color: var(--cor2);
+        color: black;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    /* ÁREA DE CLASSES DE ANIMAÇÕES COM JS */
+
     .animScale{
         transform: scale(1.1);
     }
+
+    /* FIM DA ÁREA DE ANIMAÇÕES COM JS */
 
 }
